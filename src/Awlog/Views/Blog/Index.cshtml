@@ -1,0 +1,27 @@
+﻿@model Guid?
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>Awlog</h1>
+<h2>What is it?</h2>
+<p>This project will be used by me for practice my skills in ASP.NET and C# in common. I planed to create my own blog with comfortable managment.
+    Also I will trying write my notes on English</p>
+@if (Model.HasValue)
+{
+    <h2>Your token is: @Model </h2>
+}
+else
+{
+    <h2>You are not logged</h2>
+}
+
+<div>
+    <h3>TODO Features:</h3>
+    <ul>
+        <li>Authorization (self-writed or learned one)</li>
+        <li>Adding data storage (MsSql or mongodb)</li>
+        <li>Blog structure (backend)</li>
+        <li>Blog structure (frontend)</li>
+    </ul>
+</div>
