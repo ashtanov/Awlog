@@ -19,7 +19,7 @@ namespace Awlog.Models
         public string Email { get; set; }
 
         [Display(Name="Login")]
-        [Required]
+        [Required(ErrorMessage = "FUCKASS!!!")]
         public string Login { get; set; }
     }
 }
